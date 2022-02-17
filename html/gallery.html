@@ -1,0 +1,49 @@
+<style>
+* {
+  background-color: powderblue;
+font-family: Abel;
+text-align: center;
+}
+@font-face {
+    font-family: Abel;
+    src: url('fonts/Abel-Regular.ttf');
+}
+</style>
+
+<label for="input">Choose a image file to process:</label>
+<input type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+<hr>
+<label for="input">Choose a video file to process:</label>
+<input type="file" id="input" name="input_video" accept="video/*">
+<hr>
+<label for="input">Choose a audio file to process:</label>
+<input type="file" id="filen" accept="audio/*" onchange="loadaudio(event)">
+<hr>
+
+<video id="video" class="video-js" data-setup='{}' controls autoplay loop height="300" width="300"></video>
+<img id="output" height="300" width="300"/>
+<audio id="audio" controls autoplay loop></audio>
+
+<script>
+document.getElementById("input").addEventListener("change", function() {
+  var media = URL.createObjectURL(this.files[0]);
+  var video = document.getElementById("video");
+  video.src = media;
+  video.style.display = "block";
+  video.play();
+});
+
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+var loadaudio = function(event) {
+	var audio = document.getElementById('audio');
+	audio.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+
+
+
+
