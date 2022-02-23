@@ -17,7 +17,7 @@ const launchpadApps: LaunchpadData[] = [
     id: "github",
     title: "Github",
     img: "img/icons/github.png",
-    link: "https://github.com/absozero/absozero.github.io"
+    link: "https://github.com/absozero"
   },
   {
     id: "bosa",
@@ -26,10 +26,22 @@ const launchpadApps: LaunchpadData[] = [
     link: "https://absozero.github.io/BOSA-bot"
   },
   {
+    id: "cliweather",
+    title: "Cliweather",
+    img: "img/icons/launchpad/gungnir.png",
+    link: "https://absozero.github.io/BOSA-bot"
+  },
+  {
     id: "galact",
     title: "Galact",
     img: "img/icons/launchpad/meta.png",
     link: "https://absozero.github.io/Galact"
+  },
+  {
+    id: "blog",
+    title: "Blog",
+    img: "img/icons/launchpad/cube.png",
+    link: "https://absozero.github.io/BOSA-bot"
   }
 ];
 

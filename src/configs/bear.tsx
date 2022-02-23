@@ -28,7 +28,7 @@ const bear: BearData[] = [
         title: "About Me",
         file: "markdown/about-me.md",
         icon: <GiNinjaHeroicStance />,
-        excerpt: "Hey there! I'm Absozero..."
+        excerpt: "Hello! I'm Absozero..."
       },
       {
         id: "github-stats",
@@ -66,6 +66,24 @@ const bear: BearData[] = [
         icon: <HiFire />,
         excerpt: "A discord bot built on a fork of the original discord.py ",
         link: "https://absozero.github.io/BOSA-bot"
+      },
+      {
+        id: "cliweather",
+        title: "Cliweather",
+        file: "https://raw.githubusercontent.com/absozero/cliweather/main/README.md",
+        icon: <HiFire />,
+        excerpt:
+          "A weather app that works in both the cli and the web browser.",
+        link: "https://absozero.github.io/cliweather"
+      },
+      {
+        id: "blog",
+        title: "Blog",
+        file: "https://raw.githubusercontent.com/absozero/blog/master/README.md",
+        icon: <HiFire />,
+        excerpt:
+          "A blog that tries to be different han any other blog out there.",
+        link: "https://absozero.github.io/blog"
       }
     ]
   }

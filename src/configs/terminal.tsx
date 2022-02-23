@@ -16,7 +16,10 @@ const terminal: TerminalData[] = [
               Hi! This is Absozero,a random yet cool coder from the internet.
             </div>
             <div className="mt-1">
-              I value myself on being kind and understanding.
+              I value myself on being kind and understanding. I make sure totry
+              to help as many people asI can, and am very mucm influenced by the
+              mentality of open source, where people can work together on a
+              project that is open to view and edit rather than being private.
             </div>
           </div>
         )
@@ -26,13 +29,14 @@ const terminal: TerminalData[] = [
         title: "interests.txt",
         type: "file",
         content:
-          "AI / Web frameorks / Client-server / Linux / Coding in general"
+          "AI / Web frameorks / Client-server / Full stack / Web apps / Linux / Coding in general"
       },
       {
         id: "about-who-cares",
         title: "who-cares.txt",
         type: "file",
-        content: "I'm open to anything within reach of coding and development."
+        content:
+          "I'm open to anything within reach of coding and development, and I believe everything on a computer screen is possible with the help of code."
       },
       {
         id: "about-contact",
@@ -72,7 +76,7 @@ const terminal: TerminalData[] = [
               </a>
             </li>
             <li>
-              Blog:{" "}
+              Portfolio:{" "}
               <a
                 className="text-blue-300"
                 href="https://absozero.github.io"
@@ -80,6 +84,17 @@ const terminal: TerminalData[] = [
                 rel="noreferrer"
               >
                 https://absozero.github.io
+              </a>
+            </li>
+            <li>
+              Blog:{" "}
+              <a
+                className="text-blue-300"
+                href="https://absozero.github.io/blog"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://absozero.github.io/blog
               </a>
             </li>
           </ul>
