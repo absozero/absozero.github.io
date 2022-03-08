@@ -1,13 +1,8 @@
-
 # [Absozero's portfolio](https://absozero.github.io)
 
 A customized version of [zxh](https://github.com/Renovamen/playground-macos)'s portfolio. Couple of different things added and a couple changed, but the core is the same.
 
 Powered by [React](https://reactjs.org/) + [React Redux](https://react-redux.js.org/) + [Tailwind CSS](https://tailwindcss.com/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/).
-
-![day](./public/screenshots/day.png)
-![night](./public/screenshots/night.png)
-
 
 &nbsp;
 
