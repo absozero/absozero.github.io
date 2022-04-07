@@ -42,6 +42,12 @@ const launchpadApps: LaunchpadData[] = [
     title: "Blog",
     img: "img/icons/launchpad/cube.png",
     link: "https://absozero.github.io/blog"
+  },
+  {
+    id: "uptime",
+    title: "Uptime",
+    img: "img/icons/launchpad/flint.png",
+    link: "https://absozero.github.io/uptime"
   }
 ];
 
