@@ -4,9 +4,10 @@ RUN mkdir -p /app/node_modules
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install
-
 COPY . .
+
+RUN npm install && npm run build
+
+FROM httpd:2.4
+COPY --from=0 /app/dist /usr/local/apache2/htdocs/
 
