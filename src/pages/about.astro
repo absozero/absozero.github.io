@@ -2,6 +2,8 @@
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
+import {Content as Portfolio} from './post/portfolio.md';
+
 ---
 
 <html lang="en">
@@ -32,42 +34,42 @@ import Nav from '../components/Nav.astro';
 	<body>
 		<Nav />
 		<div class="wrapper">
-			<h1>About Jeanine</h1>
+			<h1>About me, Absozero</h1>
 			<div class="heroImg">
 				<img
 					width="1400"
 					height="350"
-					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
+					src="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?auto=format&fit=crop&w=1400&h=350&q=75"
 				/>
 			</div>
 			<div class="bio wrapper">
 				<p>
-					I am absozero.
+					I am <a href="https://github.com/absozero">Absozero</a>.
+				</p>
+				<h2>
+					My Story
+				</h2>
+				<p>
+					I am a computer scientist, devops engineer, sys atemdministrator, and web developer all rolled up into one.
 				</p>
 				<p>
-					Pepper jack cheesy feet cheese slices. Halloumi port-salut queso caerphilly roquefort
-					cheese slices cheesy feet rubber cheese. Cheese slices smelly cheese pecorino macaroni
-					cheese feta blue castello roquefort edam. Babybel pepper jack airedale cheddar fromage
-					frais manchego.
+					Here's my story, I came from learning to make videos on Imovie, then transferred to editing videos on my computer.
+					In the process, I learned about FOSS and its theories doing this, and transferred to a computer-based ecosystem. I soon
+					got into multimedia creation, using open source, and even bought a drawing tablet that I still use to help me with this.
 				</p>
 				<p>
-					Cauliflower cheese lancashire macaroni cheese. Cheeseburger babybel cheese on toast
-					airedale cauliflower cheese who moved my cheese roquefort paneer. Stinking bishop cheddar
-					taleggio port-salut port-salut stinking bishop cheesy grin babybel. Blue castello feta
-					everyone loves brie.
+					After that, I became more interested in the actual code and underlying technology behind the applications that I was using, and therefore
+					began learning the process of how to code. I then used my knowledge of programming to further my knowledge and explore relative areas to
+					programming, such as Devops and Containerized development. From there, I used those technologies to further improve and work on my coding.  
 				</p>
+				<h2>
+					My Proficiencies
+				</h2>
 				<p>
-					Goat squirty cheese cut the cheese. Cheese and wine cheddar fondue airedale cottage cheese
-					camembert de normandie feta babybel. Rubber cheese melted cheese pecorino port-salut
-					fondue gouda cheese on toast cheesy feet. Feta edam everyone loves cheese strings
-					camembert de normandie.
+					I mainly work on devops and 
 				</p>
-				<p>
-					Caerphilly monterey jack goat. Squirty cheese cheesy grin hard cheese cheese strings
-					cheese and biscuits croque monsieur smelly cheese danish fontina. Swiss cheese triangles
-					everyone loves mascarpone cheese on toast who moved my cheese lancashire cheeseburger.
-					Fromage frais fromage frais cheese and biscuits stinking bishop cauliflower cheese.
-				</p>
+				<h2>Temporary Markdown aboutme</h2>
+				<Portfolio />
 			</div>
 		</div>
 		<Footer />
