@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/project.astro
 title: A Site with Astro
-color: MediumSpringGreen
+color: rgb(185, 192, 228)
+img: rgb(2, 42, 37)
 client: Self
 publishDate: 2022-02-10 00:00:00
 description: |

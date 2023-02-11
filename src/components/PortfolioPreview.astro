@@ -10,10 +10,10 @@ const { frontmatter, url } = Astro.props.project;
 ---
 
 <div class="card">
-	<div class="titleCard" style={`background-image:url(${frontmatter.img})`}>
+	<div class="titleCard" style={`background-color:${frontmatter.img}`}>
 		<h1 class="title" style={`color:${frontmatter.color}`}>{frontmatter.title}</h1>
 	</div>
-	<div class="descCard">
+	<div class="descCard" style={`background-color:${frontmatter.img}`}>
 		<p class="desc">{frontmatter.description}</p>
 		<div class="tags">
 			Tagged:

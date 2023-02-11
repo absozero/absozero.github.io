@@ -87,10 +87,10 @@ const { content } = Astro.props;
 	</head>
 	<body>
 		<Nav />
-		<header style={`background-image:url(${content.img})`} class="hero">
+		<header style={`background-color:${content.img}`} class="hero">
 			<h1 class="title" style={`color:${content.color}`}>{content.title}</h1>
 		</header>
-		<div class="leadIn">
+		<div class="leadIn" style={`background-color:${content.img}`}>
 			<div class="wrapper">
 				{content.tags.map((t) => <span class="tag">{t}</span>)}
 				<h3 class="tagline">{content.description}</h3>
