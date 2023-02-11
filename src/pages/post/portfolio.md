@@ -1,10 +1,9 @@
 ﻿
-# I'm Absozero, hello! 👋
 [![Links](https://img.shields.io/badge/-Links-green?style=flat&link=https://linktr.ee/absozero)](https://linktr.ee/absozero)
 
-An open source enthusiast, indecisive developer, and a humorous person. I love to 👨‍💻 code and work with any type of software, regardless of the language.
+I am [Absozero](https://linktr.ee/absozero). An open source enthusiast, indecisive developer, and a humorous person. I love to 👨‍💻 code and work with any type of software, regardless of the language.
 
-:robot: Hardware is also a portion that I like, I work in robotics, in the VEX ecosystem. That is where two portions come together, both coding and controlling hardware on the robot.
+🤖 Hardware is also a portion that I like, I work in robotics, in the VEX ecosystem. That is where two portions come together, both coding and controlling hardware on the robot.
 
 I also work in the web, desktop, and command line fields, with javascript and python mainly, and I also work with rust and go for low level/compiled software.
 ```python
@@ -26,7 +25,6 @@ To be perfectly honest, I like modern languages because they have modern solutio
 - Javascript
 	- Node
 - Python
-	- venv
 
 ---
 
@@ -57,5 +55,7 @@ To be perfectly honest, I like modern languages because they have modern solutio
 ---
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=absozero&theme=react&repo=absozero.github.io)](https://github.com/absozero/absozero.github.io)
+
+[![Awesome Devtools](https://github-readme-stats.vercel.app/api/pin/?username=absozero&theme=react&repo=awesome-devtools)](https://github.com/absozero/awesome-devtools)
 
 [![Abso's github stats](https://github-readme-stats.vercel.app/api?username=absozero&theme=blueberry&show_icons=true&hide_border=true)](https://github.com/absozero/absozero)

@@ -88,7 +88,7 @@ const { content } = Astro.props;
 	<body>
 		<Nav />
 		<header style={`background-image:url(${content.img})`} class="hero">
-			<h1 class="title">{content.title}</h1>
+			<h1 class="title" style={`color:${content.color}`}>{content.title}</h1>
 		</header>
 		<div class="leadIn">
 			<div class="wrapper">
