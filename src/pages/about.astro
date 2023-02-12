@@ -1,78 +1,122 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
-import {Content as Portfolio} from './post/portfolio.md';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import {Content as Portfolio} from './post/portfolio.md';
 ---
 
-<html lang="en">
-	<head>
-		<MainHead title="Absozero's Portfolio" description="About Absozero" />
-		<style>
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
-			}
-
-			.heroImg img {
-				width: 100%;
-			}
-
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
-				margin-top: 4em;
-			}
-
-			.wrapper.bio {
-				max-width: 50em;
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1>About me, Absozero</h1>
-			<div class="heroImg">
+<BaseLayout title="About | Absozero" description="About Absozero Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
 				<img
-					width="1400"
-					height="350"
-					src="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?auto=format&fit=crop&w=1400&h=350&q=75"
+					width="1553"
+					height="873"
+					src="/assets/dock.jpeg"
+					alt="Absozero at projects with a colleague"
 				/>
-			</div>
-			<div class="bio wrapper">
-				<p>
-					I am <a href="https://github.com/absozero">Absozero</a>.
-				</p>
-				<h2>
-					My Story
-				</h2>
-				<p>
-					I am a computer scientist, devops engineer, sys atemdministrator, and web developer all rolled up into one.
-				</p>
-				<p>
-					Here's my story, I came from learning to make videos on Imovie, then transferred to editing videos on my computer.
-					In the process, I learned about FOSS and its theories doing this, and transferred to a computer-based ecosystem. I soon
-					got into multimedia creation, using open source, and even bought a drawing tablet that I still use to help me with this.
-				</p>
-				<p>
-					After that, I became more interested in the actual code and underlying technology behind the applications that I was using, and therefore
-					began learning the process of how to code. I then used my knowledge of programming to further my knowledge and explore relative areas to
-					programming, such as Devops and Containerized development. From there, I used those technologies to further improve and work on my coding.  
-				</p>
-				<h2>
-					My Proficiencies
-				</h2>
-				<p>
-					I mainly work on devops and containerized workflows where isolation and cross-platform workflows are important. I also run a selfhosted server at home and use it 
-					to continually learn new technologies.
-				</p>
-				<h1>This is me:</h1>
-				<Portfolio />
-			</div>
-		</div>
-		<Footer />
-	</body>
-</html>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I am a computer scientist, devops engineer, sys atemdministrator, and web developer all rolled up into one.
+					</p>
+					<p>
+						Here's my story, I came from learning to make videos on Imovie, then transferred to editing videos on my computer.
+						In the process, I learned about FOSS and its theories doing this, and transferred to a computer-based ecosystem. I soon
+						got into multimedia creation, using open source, and even bought a drawing tablet that I still use to help me with this.
+					</p>
+					<br>
+					<p>
+						After that, I became more interested in the actual code and underlying technology behind the applications that I was using, and therefore
+						began learning the process of how to code. I then used my knowledge of programming to further my knowledge and explore relative areas to
+						programming, such as Devops and Containerized development. From there, I used those technologies to further improve and work on my coding.  
+					</p>
+					<br>
+					<h3>
+						My Proficiencies
+					</h3>
+					<p>
+						I mainly work on devops and containerized workflows where isolation and cross-platform workflows are important. I also run a selfhosted server at home and use it 
+						to continually learn new technologies.
+					</p>
+					<br>
+					<h2>This is me:</h2>
+					<Portfolio />
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>Devops, Sysadmin, Software engineer, backend and Frontend developer, robotics experience</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
