@@ -1,22 +1,31 @@
 ﻿
+
 [![Links](https://img.shields.io/badge/-Links-green?style=flat&link=https://linktr.ee/absozero)](https://linktr.ee/absozero)
 
-I am [Absozero](https://linktr.ee/absozero). An open source enthusiast, indecisive developer, and a humorous person. I love to 👨‍💻 code and work with any type of software, regardless of the language.
+<br>
 
-🤖 Hardware is also a portion that I like, I work in robotics, in the VEX ecosystem. That is where two portions come together, both coding and controlling hardware on the robot.
+I am [Absozero](https://linktr.ee/absozero). An open source enthusiast, indecisive developer, and a humorous person. I love to 👨‍💻 code and work with any type of software, regardless of the language. 🤖 Hardware is also a portion that I like, I work in robotics, in the VEX ecosystem. That is where two portions come together, both coding and controlling hardware on the robot. I also work in the web, desktop, and command line fields, with javascript and python mainly, and I also work with rust and go for low level/compiled software.
 
-I also work in the web, desktop, and command line fields, with javascript and python mainly, and I also work with rust and go for low level/compiled software.
+<br>
+
 ```python
 if (Absozero ++ open-source) == true:
 	print("That's a good thing")
 else:
 	print("Get working") 
 ```
-To be perfectly honest, I like modern languages because they have modern solutions to more modern developer problems.
+
+<br>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=absozero&theme=radical)](https://github.com/absozero)
-## I use:
-### Technologies:
+
+---
+<br>
+
+### Technologies used:
+
+<br>
+
 - VSCode
 - Linux
 - Git
@@ -28,7 +37,12 @@ To be perfectly honest, I like modern languages because they have modern solutio
 
 ---
 
+<br>
+
 ### My stack:
+
+<br>
+
 [![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript&link=https://github.com/absozero)](https://github.com/absozero)
 [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white&link=https://github.com/absozero)](https://github.com/absozero)
 [![Python](https://img.shields.io/badge/-Python-darkblue?style=flat&logo=python&logoColor=yellow&link=https://github.com/absozero)](https://github.com/absozero)
@@ -52,7 +66,11 @@ To be perfectly honest, I like modern languages because they have modern solutio
 [![Windows](https://img.shields.io/badge/-Windows-darkblue?style=flat&logo=windows&link=https://github.com/absozero)](https://github.com/absozero)
 [![Linux](https://img.shields.io/badge/-Linux-black?style=flat&logo=linux&logoColor=yellow&link=https://github.com/absozero)](https://github.com/absozero)
 
----
+<br>
+
+### Some more stats
+
+<br>
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=absozero&theme=react&repo=absozero.github.io)](https://github.com/absozero/absozero.github.io)
 
