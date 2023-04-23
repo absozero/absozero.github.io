@@ -1,0 +1,1 @@
+import{i as e}from"./typed.module.991ca3f4.js";import"./ThemeToggle.astro_astro_type_script_index_0_lang.6bf4bf29.js";new e("#element",{strings:["This is a page containing information about myself."],typeSpeed:150,backSpeed:100,showCursor:!1});
