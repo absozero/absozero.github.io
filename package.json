@@ -11,6 +11,9 @@
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^0.16.0",
-		"astro": "^2.0.10"
-	}
+		"astro": "^2.0.10",
+		"particles.js": "^2.0.0",
+		"typed.js": "^2.0.15"
+	},
+	"packageManager": "yarn@3.5.0"
 }

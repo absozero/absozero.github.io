@@ -6,13 +6,32 @@ import Hero from '../components/Hero.astro';
 import {Content as Portfolio} from './post/portfolio.md';
 ---
 
-<BaseLayout title="About | Absozero" description="About Absozero Lorem Ipsum">
+<script>
+	import Typed from 'typed.js';
+	
+	const typed = new Typed('#element', {
+	  strings: ['This is a page containing information about myself.'],
+	  typeSpeed: 150,
+	  backSpeed: 100,
+	  showCursor: false,
+	});
+	
+</script>
+
+<BaseLayout title="About | Absozero" description="About Absozero">
+	<div class="bg-animation">
+		<div id="stars"></div>
+		<div id="stars2"></div>
+		<div id="stars3"></div>
+		<div id="stars4"></div>
+	</div>
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				tagline=""
 			>
+			<p id="element"></p>
 				<img
 					width="1553"
 					height="873"
@@ -71,6 +90,8 @@ import {Content as Portfolio} from './post/portfolio.md';
 		flex-direction: column;
 		gap: 3.5rem;
 	}
+
+
 
 	img {
 		margin-top: 1.5rem;
