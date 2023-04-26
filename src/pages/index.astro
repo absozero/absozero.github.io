@@ -10,6 +10,7 @@ import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
+import Footer from '../components/Footer.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 // Page section components
@@ -73,9 +74,9 @@ const typed = new Typed('#element', {
 					tagline=""
 					align="start"
 				>
-				<h1 style="font-size: 5rem;">Absozero</h1>
-				<sub style="font-size: 0.8rem;"><span class="flashing" style="font-size: 1.45rem;">🥶</span></sub>
-				<p id="element" style="font-size: 4rem;"></p>
+				<h1 style="font-size: 4rem;">Absozero</h1>
+				<sub style="font-size: 0.6rem;"><span class="flashing" style="font-size: 1.45rem;">🥶</span></sub>
+				<p id="element" style="font-size: 2.7rem;"></p>
 				<noscript> Developer, Researcher, and Academic</noscript>
 				
 				</Hero>
@@ -192,6 +193,7 @@ const typed = new Typed('#element', {
 		</main>
 	</div>
 	<ContactCTA />
+	<Footer />
 </div>
 </BaseLayout>
 
@@ -237,7 +239,7 @@ const typed = new Typed('#element', {
 	
 	
 	#element {
-		min-height: 1.4em;
+		min-height: 3em;
 	}
 
 	#element::before {
