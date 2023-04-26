@@ -27,9 +27,18 @@ const projects = (await getCollection('projects'))
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
+<script is:inline src="/pace.min.js"></script>
+<link href="/minimal.css" rel="stylesheet" type="text/css" />
 
 <script>
 import Typed from 'typed.js';
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+	repeat: true
+});
 
 const typed = new Typed('#element', {
   strings: ['<strong> Developer<strong>', '<strong> Researcher<strong>', 'n<strong> Academic<strong>', '<strong> Software Engineer<strong>'],
@@ -41,11 +50,13 @@ const typed = new Typed('#element', {
 });
 
 
+// Get all elements with the "fade-in" class
 
 
 </script>
 
-
+<!--write new project files
+ in md-->
 <BaseLayout>
 	<div class="bg-animation">
 		<div id="stars"></div>
@@ -53,21 +64,25 @@ const typed = new Typed('#element', {
 		<div id="stars3"></div>
 		<div id="stars4"></div>
 	</div>
+	<div data-scroll-container>
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Absozero"
+					title=""
 					tagline=""
 					align="start"
 				>
-				<p id="element"></p>
+				<h1 style="font-size: 5rem;">Absozero</h1>
+				<sub style="font-size: 0.8rem;"><span class="flashing" style="font-size: 1.45rem;">🥶</span></sub>
+				<p id="element" style="font-size: 4rem;"></p>
 				<noscript> Developer, Researcher, and Academic</noscript>
+				
 				</Hero>
 				</header>
 				
 				<header class="hero">
-					<div class="roles">
+					<div class="roles" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2">
 						<div class="bounce" id="pill1">
 							<a href="https://github.com/absozero">
 							<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
@@ -86,7 +101,29 @@ const typed = new Typed('#element', {
 					</div>
 			</header>
 
-			<Skills />
+			<div class="fadein" data-scroll data-scroll-class="fadein--visible" data-scroll-direction="horizontal" data-scroll-speed="8">
+				<Skills />
+			</div>
+
+		</div>
+
+		<section class="section with-background bg-variant" data-scroll data-scroll-speed="0.01">
+			<header class="section-header stack gap-2 lg:gap-1">
+				<h3 data-scroll data-scroll-direction="vertical" data-scroll-speed="0.8">But who am I?</h3>
+				<p>
+					My pseudoname on the internet is <strong>Absozero</strong>. I am a front-end <u>developer</u>, and I <span style="color:cadetblue">enjoy creating software</span> that
+					people can use and like and is functional. I have worked with many technologies, my favorites are <span style="color:blueviolet">Docker, Linux, and Typescript</span>.
+					I think that development and computer science is a key to future development and can aid in many parallel areas of study. I firmly believe
+					that everyone has a <span style="color:darkolivegreen">talent in them</span> that can be harnessed if given the oppurtunity. 
+					I enjoy talking to people about <span style="color:cadetblue">software and development</span>,
+					shoot me an email to <a href="mailto:azermazer165@gmail.com" style="color:deeppink">get in contact</a>!
+				</p>
+				<p>If you want to learn more, check out the <a href="/about">about</a> page</p>
+			</header>
+
+		</section>
+		<div data-scroll data-scroll-direction="horizontal" data-scroll-speed="9" style="align-items: center; text-align: center; font-size: xx-large;">
+			🥶	
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
@@ -100,7 +137,7 @@ const typed = new Typed('#element', {
 					<Grid variant="offset">
 						{
 							projects.map((project) => (
-								<li>
+								<li data-scroll data-scroll-direction="horizontal" data-scroll-speed="9">
 									<PortfolioPreview project={project} />
 								</li>
 							))
@@ -108,39 +145,42 @@ const typed = new Typed('#element', {
 					</Grid>
 				</div>
 
-				<div class="cta">
+				<div class="cta fadein" data-scroll data-scroll-class="fadein--visible" data-scroll-direction="vertical" data-scroll-speed="1.7">
 					<CallToAction href="/projects/">
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
 			</section>
-
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3 data-scroll data-scroll-direction="vertical" data-scroll-speed="0.8">Mentions</h3>
 					<p>
 						I would like to point out some of the resources that I refer to the most.
 					</p>
 				</header>
 				
 
-				<div class="gallery">
+				<div class="gallery" data-scroll data-scroll-direction="horizontal" data-scroll-speed="8">
+					<div class="fadein" data-scroll data-scroll-class="fadein--visible">
 					<Grid variant="small">
 						{
-							['Github', 'Hacker News', 'Awesome-lists'].map((brand) => (
+							['Github', 'Hacker News', 'Awesome-lists', 'MIT OCW'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
 							))
 						}
 					</Grid>
+					</div>
 				</div>
 			</section>
 
-			<section class="section with-background bg-variant">
+
+
+			<section class="section with-background bg-variant" data-scroll data-scroll-speed="0.01">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>About this site</h3>
+					<h3 data-scroll data-scroll-direction="vertical" data-scroll-speed="0.8">About this site</h3>
 					<p>
 						This is a portfolio, a landing page for Absozero, and is a place where information about me is stored
 						and can be seen. It has been revamped recently, from forking another well-built portfolio to using the
@@ -150,9 +190,9 @@ const typed = new Typed('#element', {
 
 			</section>
 		</main>
-
-		<ContactCTA />
 	</div>
+	<ContactCTA />
+</div>
 </BaseLayout>
 
 <style>
@@ -163,10 +203,38 @@ const typed = new Typed('#element', {
 		gap: 2rem;
 	}
 
+	.fade-in {
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	.fade-in.appear {
+		opacity: 1;
+	}
+
+	.flashing {
+	animation: blink 1s infinite;
+	}
+
+	@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+	}
+
+	.fadein {
+		opacity: 0;
+		transition: opacity 2.5s;
+	}
+
+	.fadein--visible {
+		opacity: 1;
+	}
 	.bounce {
 		animation: bounce 3s infinite;
 	}
 
+	
 	
 	#element {
 		min-height: 1.4em;
@@ -258,8 +326,7 @@ const typed = new Typed('#element', {
 		aspect-ratio: calc(2.25 / var(--bg-scale));
 		top: 0;
 		transform: translateY(-75%) translateX(-50%);
-		background: url('/assets/backgrounds/noise.png') top center/220px repeat,
-			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat, var(--gray-999);
+		background: none;
 		background-blend-mode: overlay, normal, normal, normal;
 		mix-blend-mode: var(--bg-blend-mode);
 		z-index: -1;

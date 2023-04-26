@@ -12,8 +12,18 @@ const projects = (await getCollection('projects')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 ---
+
+<script is:inline src="/pace.min.js"></script>
+<link href="/flash.css" rel="stylesheet" type="text/css" />
+
 <script>
 	import Typed from 'typed.js';
+	import LocomotiveScroll from 'locomotive-scroll';
+
+	const scroll = new LocomotiveScroll({
+		el: document.querySelector('[data-scroll-container]'),
+		smooth: true
+	});
 	
 	const typed = new Typed('#element', {
 	  strings: ['These are my projects so far:'],
@@ -35,7 +45,7 @@ const projects = (await getCollection('projects')).sort(
 	<div id="stars3"></div>
 	<div id="stars4"></div>
 </div>
-	<div class="stack gap-20">
+	<div class="stack gap-20" data-scroll-container>
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="My projects"

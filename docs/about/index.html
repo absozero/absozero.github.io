@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<script src="/vis-timeline-graph2d.min.js"></script>
+<script src="/pace.min.js"></script>
+<link href="/flash.css" rel="stylesheet" type="text/css">
+<link href="/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css">
+
 
 
 <html lang="en" class="astro-37FXCHFA">
@@ -6,7 +11,7 @@
 		<meta charset="UTF-8">
 <meta name="description" property="og:description" content="About Absozero">
 <meta name="viewport" content="width=device-width">
-<meta name="generator" content="Astro v2.3.0">
+<meta name="generator" content="Astro v2.3.1">
 <title>About | Absozero</title>
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -34,18 +39,19 @@
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
 </script>
-	<link rel="stylesheet" href="/_astro/404.f4259f74.css" />
-<link rel="stylesheet" href="/_astro/about.8c3abb9f.css" />
-<link rel="stylesheet" href="/_astro/about.d728e3a7.css" />
-<link rel="stylesheet" href="/_astro/about.93ec11f1.css" /><script type="module" src="/_astro/hoisted.a0b823db.js"></script></head>
+	<link rel="stylesheet" href="/_astro/404.30e62e02.css" />
+<link rel="stylesheet" href="/_astro/about.e4df161f.css" />
+<link rel="stylesheet" href="/_astro/about.b4694c68.css" />
+<link rel="stylesheet" href="/_astro/about.b6b50963.css" /><script type="module" src="/_astro/hoisted.06b94f0a.js"></script></head>
 	<body class="astro-37FXCHFA">
 		<div class="stack backgrounds astro-37FXCHFA">
+			
 			<nav class="astro-DMQPWCEC">
 	<div class="menu-header astro-DMQPWCEC">
 		<a href="/" class="site-title astro-DMQPWCEC">
-			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="url(#icon-gradient-234ierg66)" style="--size:1.6em" class="astro-PATNJMLL">
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="url(#icon-gradient-a8ostlnc)" style="--size:1.6em" class="astro-PATNJMLL">
 	<g class="astro-PATNJMLL"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 96 40 32-40 32m56 0h40"/><rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.97" rx="8.5"/></g>
-	<linearGradient id="icon-gradient-234ierg66" x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
+	<linearGradient id="icon-gradient-a8ostlnc" x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse" class="astro-PATNJMLL">
 				<stop stop-color="var(--gradient-stop-1)" class="astro-PATNJMLL"></stop>
 				<stop offset=".5" stop-color="var(--gradient-stop-2)" class="astro-PATNJMLL"></stop>
 				<stop offset="1" stop-color="var(--gradient-stop-3)" class="astro-PATNJMLL"></stop>
@@ -135,6 +141,7 @@
 		<div id="stars3" class="astro-KH7BTL4R"></div>
 		<div id="stars4" class="astro-KH7BTL4R"></div>
 	</div>
+	<div data-scroll-container class="astro-KH7BTL4R">
 	<div class="stack gap-20 astro-KH7BTL4R">
 		<main class="wrapper about astro-KH7BTL4R">
 			<header class="hero stack gap-4 center astro-BBE6DXRZ">
@@ -144,12 +151,14 @@
 	</div>
 	
 			<p id="element" class="astro-KH7BTL4R"></p>
-				<img width="1553" height="873" src="/assets/dock.jpeg" alt="Absozero at projects with a colleague" class="astro-KH7BTL4R">
+				<img src="/assets/dock.jpeg" alt="Absozero at projects with a colleague" class="astro-KH7BTL4R">
 			
 </header>
 
+
 			<section class="astro-KH7BTL4R">
-				<h2 class="section-title astro-KH7BTL4R">Background</h2>
+				
+				<h2 class="section-title astro-KH7BTL4R" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Background</h2>
 				<div class="content astro-KH7BTL4R">
 					<p class="astro-KH7BTL4R">
 						I am a computer scientist, devops engineer, sys atemdministrator, and web developer all rolled up into one.
@@ -174,6 +183,29 @@
 						I mainly work on devops and containerized workflows where isolation and cross-platform workflows are important. I also run a selfhosted server at home and use it 
 						to continually learn new technologies.
 					</p>
+					<br class="astro-KH7BTL4R">
+
+					<h3 class="astro-KH7BTL4R">
+						Proficiency Levels
+					</h3>
+					<br class="astro-KH7BTL4R">
+					<p class="astro-KH7BTL4R">These are all very relativistic measurements</p>
+					<br class="astro-KH7BTL4R">
+					<p class="astro-KH7BTL4R"><strong class="astro-KH7BTL4R">Front end: </strong></p>
+					<div style="display: inline-block;" id="progress1" class="fadein astro-KH7BTL4R" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p class="astro-KH7BTL4R"><strong class="astro-KH7BTL4R">Linux: </strong></p>
+					<div style="display: inline-block;" id="progress2" class="fadein astro-KH7BTL4R" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p class="astro-KH7BTL4R"><strong class="astro-KH7BTL4R">Devops: </strong></p>
+					<div style="display: inline-block;" id="progress3" class="fadein astro-KH7BTL4R" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p class="astro-KH7BTL4R"><strong class="astro-KH7BTL4R">Machine Learning/AI: </strong></p>
+					<div style="display: inline-block;" id="progress4" class="fadein astro-KH7BTL4R" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p class="astro-KH7BTL4R"><strong class="astro-KH7BTL4R">Programming/Development: </strong></p>
+					<div style="display: inline-block;" id="progress5" class="fadein astro-KH7BTL4R" data-scroll data-scroll-class="fadein--visible"></div>
+
 					<br class="astro-KH7BTL4R">
 					<h2 class="astro-KH7BTL4R">This is me:</h2>
 					<p><a href="https://linktr.ee/absozero"><img src="https://img.shields.io/badge/-Links-green?style=flat&#x26;link=https://linktr.ee/absozero" alt="Links"></a></p>
@@ -240,9 +272,16 @@
 				<h2 class="section-title astro-KH7BTL4R">Skills</h2>
 				<div class="content astro-KH7BTL4R">
 					<p class="astro-KH7BTL4R">Devops, Sysadmin, Software engineer, backend and Frontend developer, robotics experience</p>
+					<br class="astro-KH7BTL4R">
+					
 				</div>
 			</section>
+			
+
+			
 		</main>
+		<h1 class="section-title astro-KH7BTL4R" style="align-items: center; text-align: center;" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Timeline of Interests</h1>
+		<div id="visualization" class="astro-KH7BTL4R"></div>
 
 		<aside class="astro-RCDZUQ3A">
 	<h2 class="astro-RCDZUQ3A">Get in contact</h2>
@@ -253,8 +292,43 @@
 	
 </svg>
 	</a>
-</aside>
+	<footer class="astro-SZ7XMLTE">
+	<div class="group astro-SZ7XMLTE">
+		<p class="astro-SZ7XMLTE">
+			Made with <a href="https://astro.build/" class="astro-SZ7XMLTE">Astro</a>
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="currentcolor" style="--size:1.2em" class="astro-PATNJMLL">
+	<g class="astro-PATNJMLL"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M94.1 184.6c-11.4 33.9-56.6 33.9-56.6 33.9s0-45.2 33.9-56.6m124.5-56.5L128 173.3 82.7 128l67.9-67.9C176.3 34.4 202 34.7 213 36.3a7.8 7.8 0 0 1 6.7 6.7c1.6 11 1.9 36.7-23.8 62.4Z"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M184.6 116.7v64.6a8 8 0 0 1-2.4 5.6l-32.3 32.4a8 8 0 0 1-13.5-4.1l-8.4-41.9m11.3-101.9H74.7a8 8 0 0 0-5.6 2.4l-32.4 32.3a8 8 0 0 0 4.1 13.5l41.9 8.4"/></g>
+	
+</svg>
+		</p>
+		<p class="astro-SZ7XMLTE">&copy; 2023 Absozero</p>
+		<p class="astro-SZ7XMLTE">The floating things are supposed to be stars</p>
 	</div>
+	<p class="socials astro-SZ7XMLTE">
+		<a href="https://www.youtube.com/@absozero7796" class="astro-SZ7XMLTE"> YouTube</a>
+		<a href="https://github.com/absozero" class="astro-SZ7XMLTE"> GitHub</a>
+	</p>
+</footer>
+</aside>
+		<footer class="astro-SZ7XMLTE">
+	<div class="group astro-SZ7XMLTE">
+		<p class="astro-SZ7XMLTE">
+			Made with <a href="https://astro.build/" class="astro-SZ7XMLTE">Astro</a>
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" stroke="currentcolor" style="--size:1.2em" class="astro-PATNJMLL">
+	<g class="astro-PATNJMLL"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M94.1 184.6c-11.4 33.9-56.6 33.9-56.6 33.9s0-45.2 33.9-56.6m124.5-56.5L128 173.3 82.7 128l67.9-67.9C176.3 34.4 202 34.7 213 36.3a7.8 7.8 0 0 1 6.7 6.7c1.6 11 1.9 36.7-23.8 62.4Z"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M184.6 116.7v64.6a8 8 0 0 1-2.4 5.6l-32.3 32.4a8 8 0 0 1-13.5-4.1l-8.4-41.9m11.3-101.9H74.7a8 8 0 0 0-5.6 2.4l-32.4 32.3a8 8 0 0 0 4.1 13.5l41.9 8.4"/></g>
+	
+</svg>
+		</p>
+		<p class="astro-SZ7XMLTE">&copy; 2023 Absozero</p>
+		<p class="astro-SZ7XMLTE">The floating things are supposed to be stars</p>
+	</div>
+	<p class="socials astro-SZ7XMLTE">
+		<a href="https://www.youtube.com/@absozero7796" class="astro-SZ7XMLTE"> YouTube</a>
+		<a href="https://github.com/absozero" class="astro-SZ7XMLTE"> GitHub</a>
+	</p>
+</footer>
+	</div>
+</div>
 
 			<footer class="astro-SZ7XMLTE">
 	<div class="group astro-SZ7XMLTE">
@@ -266,6 +340,7 @@
 </svg>
 		</p>
 		<p class="astro-SZ7XMLTE">&copy; 2023 Absozero</p>
+		<p class="astro-SZ7XMLTE">The floating things are supposed to be stars</p>
 	</div>
 	<p class="socials astro-SZ7XMLTE">
 		<a href="https://www.youtube.com/@absozero7796" class="astro-SZ7XMLTE"> YouTube</a>
@@ -279,3 +354,4 @@
 		
 	</body>
 </html>
+

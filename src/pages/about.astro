@@ -4,10 +4,77 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import {Content as Portfolio} from './post/portfolio.md';
+import Footer from '../components/Footer.astro';
 ---
+<script is:inline src="/vis-timeline-graph2d.min.js"></script>
+<script is:inline src="/pace.min.js"></script>
+<link href="/flash.css" rel="stylesheet" type="text/css" />
+<link href="/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
 
 <script>
 	import Typed from 'typed.js';
+	import LocomotiveScroll from 'locomotive-scroll';
+	import ProgressBar from 'progressbar.js';
+
+	var bar = new ProgressBar.Line(progress1, {
+		strokeWidth: 0.7,
+		easing: 'easeInOut',
+		duration: 5500,
+		color: '#51BEE9',
+		trailColor: '#AFAFAF',
+		trailWidth: 0.6,
+	});
+
+	bar.animate(0.65);
+
+	var bar2 = new ProgressBar.Line(progress2, {
+		strokeWidth: 0.7,
+		easing: 'easeInOut',
+		duration: 5500,
+		color: '#51E9A9',
+		trailColor: '#AFAFAF',
+		trailWidth: 0.6,
+	});
+
+	bar2.animate(0.97);
+
+	var bar3 = new ProgressBar.Line(progress3, {
+		strokeWidth: 0.7,
+		easing: 'easeInOut',
+		duration: 5500,
+		color: '#8458DD',
+		trailColor: '#AFAFAF',
+		trailWidth: 0.6,
+	});
+
+	bar3.animate(0.825);
+
+	var bar4 = new ProgressBar.Line(progress4, {
+		strokeWidth: 0.7,
+		easing: 'easeInOut',
+		duration: 5500,
+		color: '#DD58D3',
+		trailColor: '#AFAFAF',
+		trailWidth: 0.6,
+	});
+
+	bar4.animate(0.681);
+
+	var bar5 = new ProgressBar.Line(progress5, {
+		strokeWidth: 0.7,
+		easing: 'easeInOut',
+		duration: 5500,
+		color: '#E75D24',
+		trailColor: '#AFAFAF',
+		trailWidth: 0.6,
+	});
+
+	bar5.animate(0.91);
+
+	const scroll = new LocomotiveScroll({
+		el: document.querySelector('[data-scroll-container]'),
+		smooth: true
+	});
 	
 	const typed = new Typed('#element', {
 	  strings: ['This is a page containing information about myself.'],
@@ -15,6 +82,26 @@ import {Content as Portfolio} from './post/portfolio.md';
 	  backSpeed: 100,
 	  showCursor: false,
 	});
+
+	var container = document.getElementById('visualization');
+
+// Create a DataSet (allows two way data-binding)
+	var items = new vis.DataSet([
+	{id: 1, content: 'Videos', start: '2020-04', end: '2020-6', title: 'Editing with Imovie'},
+	{id: 2, content: 'Exploring Open Source', start: '2020-06', end: '2023-5', title: 'Exploring the intricacies of FOSS'},
+	{id: 3, content: 'Exploring animation', start: '2020-08', end: '2021-3'},
+	{id: 4, content: 'Python Code', start: '2021-01', end: '2021-7', title: 'Time period when I was exclusively making python projects. This was how I got into programming in the first place'},
+	{id: 5, content: 'Web Dev', start: '2021-06', end: '2022-2', title: 'Time period when I was working on web development and web applications mainly'},
+	{id: 6, content: 'Devops, sysadmin', start: '2021-08', end: '2022-8', title: 'Time period when I was working on mainly self-hosting, devops, and infrastructure management.'},
+	{id: 7, content: 'Organizational programming', start: '2022-09', end: '2023-5', title: 'Focusing on improving programming knowledge/taking courses to learn new skills, participating in organizational programming.'},
+	]);
+
+	// Configuration for the Timeline
+	var options = {};
+
+	// Create a Timeline
+	var timeline = new vis.Timeline(container, items, options);
+	
 	
 </script>
 
@@ -25,6 +112,7 @@ import {Content as Portfolio} from './post/portfolio.md';
 		<div id="stars3"></div>
 		<div id="stars4"></div>
 	</div>
+	<div data-scroll-container>
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -33,15 +121,15 @@ import {Content as Portfolio} from './post/portfolio.md';
 			>
 			<p id="element"></p>
 				<img
-					width="1553"
-					height="873"
 					src="/assets/dock.jpeg"
 					alt="Absozero at projects with a colleague"
 				/>
 			</Hero>
 
+
 			<section>
-				<h2 class="section-title">Background</h2>
+				
+				<h2 class="section-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Background</h2>
 				<div class="content">
 					<p>
 						I am a computer scientist, devops engineer, sys atemdministrator, and web developer all rolled up into one.
@@ -67,6 +155,29 @@ import {Content as Portfolio} from './post/portfolio.md';
 						to continually learn new technologies.
 					</p>
 					<br>
+
+					<h3>
+						Proficiency Levels
+					</h3>
+					<br>
+					<p>These are all very relativistic measurements</p>
+					<br>
+					<p><strong>Front end: </strong></p>
+					<div style="display: inline-block;" id="progress1" class="fadein" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p><strong>Linux: </strong></p>
+					<div style="display: inline-block;" id="progress2" class="fadein" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p><strong>Devops: </strong></p>
+					<div style="display: inline-block;" id="progress3" class="fadein" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p><strong>Machine Learning/AI: </strong></p>
+					<div style="display: inline-block;" id="progress4" class="fadein" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<p><strong>Programming/Development: </strong></p>
+					<div style="display: inline-block;" id="progress5" class="fadein" data-scroll data-scroll-class="fadein--visible"></div>
+
+					<br>
 					<h2>This is me:</h2>
 					<Portfolio />
 					<br>
@@ -76,22 +187,73 @@ import {Content as Portfolio} from './post/portfolio.md';
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
 					<p>Devops, Sysadmin, Software engineer, backend and Frontend developer, robotics experience</p>
+					<br>
+					
 				</div>
 			</section>
+			
+
+			
 		</main>
+		<h1 class="section-title" style="align-items: center; text-align: center;" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Timeline of Interests</h1>
+		<div id="visualization"></div>
 
 		<ContactCTA />
+		<Footer />
 	</div>
+</div>
 </BaseLayout>
 
 <style>
+	#visualization {
+	  align-items: center;
+      overflow-y: scroll;
+      min-height: 12rem;
+      border: 1px solid lightgray;
+    }
 	.about {
 		display: flex;
 		flex-direction: column;
 		gap: 3.5rem;
 	}
 
+	.fadein {
+		opacity: 0;
+		transition: opacity 2.5s;
+	}
 
+	.fadein--visible {
+		opacity: 1;
+	}
+	#progress1 {
+		padding-left: 20px;
+		width: 100%;
+		height: 0.8rem;
+	}
+
+	#progress2 {
+		padding-left: 20px;
+		width: 100%;
+		height: 0.8rem;
+	}
+
+	#progress3 {
+		padding-left: 20px;
+		width: 100%;
+		height: 0.8rem;
+	}
+
+	#progress4 {
+		padding-left: 20px;
+		width: 100%;
+		height: 0.8rem;
+	}
+
+	#progress5 {
+		padding-left: 20px;
+		width: 100%;
+		height: 0.8rem;
+	}
 
 	img {
 		margin-top: 1.5rem;

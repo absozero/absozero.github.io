@@ -26,6 +26,17 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
+<script is:inline src="/pace.min.js"></script>
+<link href="/flash.css" rel="stylesheet" type="text/css" />
+
+<script>
+	import LocomotiveScroll from 'locomotive-scroll';
+
+	const scroll = new LocomotiveScroll({
+		el: document.querySelector('[data-scroll-container]'),
+		smooth: true
+	});
+</script>
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
 	<div class="bg-animation">
@@ -34,7 +45,7 @@ const { Content } = await entry.render();
 		<div id="stars3"></div>
 		<div id="stars4"></div>
 	</div>
-	<div class="stack gap-20">
+	<div class="stack gap-20" data-scroll-container>
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
