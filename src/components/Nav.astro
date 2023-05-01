@@ -2,6 +2,7 @@
 import Icon, { Props as IconProps } from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import "@fontsource/fraunces"
+import "@fontsource/material-icons-rounded";
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -22,7 +23,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title" style="font-family: 'Mona Sans', sans-serif;">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+			<span class="material-icons-rounded" style="font-size: 1.6em; color: var(--accent-regular);">terminal</span>
 			Absozero
 		</a>
 		<menu-button>
