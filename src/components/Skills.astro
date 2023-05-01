@@ -1,17 +1,24 @@
 ---
 import Icon from './Icon.astro';
+import "@fontsource/material-icons-rounded";
+import "@fontsource/space-grotesk"
 ---
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<span class="material-icons-rounded" style="font-size: 40px; color: var(--accent-regular);">data_object</span>
 		<h2>Full Stack</h2>
-		<p>I work in multiple areas of tech, as is visible in my <a href="/about">about page</a>.</p>
+		<p>I work in multiple, unique areas of tech, as is visible in my <a href="/about">about page</a>. I enjoy programming, no matter the environment targeted.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<span class="material-icons-rounded" style="font-size: 40px; color: var(--accent-regular);">find_in_page</span>
 		<h2>Researcher</h2>
 		<p>I involve myself in multiple areas of research to grow my knowledge and expertise. I actively pursue new areas of technology.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<span class="material-icons-rounded" style="font-size: 40px; color: var(--accent-regular);">menu_book</span>
+		<h2>Academic</h2>
+		<p>I am actively pursuing and educating myself on new topics and areas of interest that can become major in the future.</p>
 	</div>
 </section>
 
@@ -36,6 +43,8 @@ import Icon from './Icon.astro';
 
 	.skills p {
 		color: var(--gray-400);
+		font-family: 'Space Grotesk', sans-serif;
+		font-weight: 500;
 	}
 
 	@media (min-width: 50em) {
@@ -52,6 +61,7 @@ import Icon from './Icon.astro';
 
 		.skills h2 {
 			font-size: var(--text-2xl);
+			font-family: 'Mona Sans', sans-serif;
 		}
 	}
 </style>

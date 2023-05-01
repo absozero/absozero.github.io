@@ -1,6 +1,7 @@
 ---
 import Icon, { Props as IconProps } from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import "@fontsource/fraunces"
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -20,7 +21,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 
 <nav>
 	<div class="menu-header">
-		<a href="/" class="site-title">
+		<a href="/" class="site-title" style="font-family: 'Mona Sans', sans-serif;">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
 			Absozero
 		</a>
@@ -114,8 +115,8 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 	nav {
 		position: sticky;
 		top: 0;
-		font-family: var(--font-brand);
-		font-weight: 500;
+		font-family: "Fraunces", sans-serif;
+		font-weight: 900;
 		margin-bottom: 1.5rem;
 		background-color: transparent;
 		z-index: 999;

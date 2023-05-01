@@ -23,6 +23,9 @@ const projects = (await getCollection('projects'))
 	.slice(0, 4);
 
 
+import "@fontsource/fraunces"
+import "@fontsource/space-grotesk"
+import "@fontsource/material-icons-rounded";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -74,9 +77,9 @@ const typed = new Typed('#element', {
 					tagline=""
 					align="start"
 				>
-				<h1 style="font-size: 4rem;">Absozero</h1>
+				<h1 style="font-size: 4rem; font-family: 'Mona Sans', sans-serif; min-height: max-content;">Absozero</h1>
 				<sub style="font-size: 0.6rem;"><span class="flashing" style="font-size: 1.45rem;">🥶</span></sub>
-				<p id="element" style="font-size: 2.7rem;"></p>
+				<p id="element" style="font-size: 2.7rem; font-family: 'Fraunces', sans-serif;"></p>
 				<noscript> Developer, Researcher, and Academic</noscript>
 				
 				</Hero>
@@ -86,17 +89,17 @@ const typed = new Typed('#element', {
 					<div class="roles" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.2">
 						<div class="bounce" id="pill1">
 							<a href="https://github.com/absozero">
-							<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
+							<Pill><span class="material-icons-rounded" style="font-size: 1,33em;">code</span> Developer</Pill>
 						</a>
 						</div>
 						<div class="bounce" id="pill2">
 						<a href="https://github.com/absozero/awesome-devtools">
-							<Pill>🧪 Researcher</Pill>
+							<Pill><span class="material-icons-rounded" style="font-size: 1,33em;">search</span> Researcher</Pill>
 						</a>
 					</div>
 					<div class="bounce" id="pill3">
 					<a href="https://github.com/absozero/awesome-devtools#learning-resources" id="pill3">
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Academic</Pill>
+						<Pill><span class="material-icons-rounded" style="font-size: 1,33em;">border_color</span> Academic</Pill>
 					</a>
 				</div>
 					</div>
@@ -110,8 +113,8 @@ const typed = new Typed('#element', {
 
 		<section class="section with-background bg-variant" data-scroll data-scroll-speed="0.01">
 			<header class="section-header stack gap-2 lg:gap-1">
-				<h3 data-scroll data-scroll-direction="vertical" data-scroll-speed="0.8">But who am I?</h3>
-				<p>
+				<h3 data-scroll data-scroll-direction="vertical" data-scroll-speed="0.8" style="font-family: 'Mona Sans', sans-serif;">But who am I?</h3>
+				<p style="font-weight: 600;">
 					My pseudoname on the internet is <strong>Absozero</strong>. I am a front-end <u>developer</u>, and I <span style="color:cadetblue">enjoy creating software</span> that
 					people can use and like and is functional. I have worked with many technologies, my favorites are <span style="color:blueviolet">Docker, Linux, and Typescript</span>.
 					I think that development and computer science is a key to future development and can aid in many parallel areas of study. I firmly believe
@@ -236,7 +239,9 @@ const typed = new Typed('#element', {
 		animation: bounce 3s infinite;
 	}
 
-	
+	p {
+		font-family: 'Space Grotesk', sans-serif;
+	}
 	
 	#element {
 		min-height: 3em;

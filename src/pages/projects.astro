@@ -9,6 +9,8 @@ import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 import Footer from '../components/Footer.astro';
 
+import "@fontsource/poppins"
+
 const projects = (await getCollection('projects')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
@@ -49,11 +51,12 @@ const projects = (await getCollection('projects')).sort(
 	<div class="stack gap-20" data-scroll-container>
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="My projects"
+				title=""
 				tagline=""
 				align="start"
 			/>
-			<p id="element"></p>
+			<h1 style="font-size: 4rem; font-family: 'Mona Sans', sans-serif; min-height: max-content;">My Projects</h1>
+			<p id="element" style="font-family: 'Poppins', sans-serif; font-weight: 600;"></p>
 			<Grid variant="offset">
 				{
 					projects.map((project) => (

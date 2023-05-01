@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import "@fontsource/fraunces"
 
 interface Props {
 	project: CollectionEntry<'projects'>;
@@ -9,7 +10,7 @@ const { data, slug } = Astro.props.project;
 ---
 
 <a class="card" href={`/projects/${slug}`}>
-	<span class="title">{data.title}</span>
+	<span class="title" style="font-family: 'Fraunces', sans-serif; font-weight: 600;">{data.title}</span>
 	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
 </a>
 

@@ -26,6 +26,9 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+import "@fontsource/space-grotesk"
+import "@fontsource/fraunces"
 ---
 <script is:inline src="/pace.min.js"></script>
 <link href="/flash.css" rel="stylesheet" type="text/css" />
@@ -51,12 +54,13 @@ const { Content } = await entry.render();
 			<header>
 				<div class="wrapper stack gap-2">
 					<a class="back-link" href="/projects/"><Icon icon="arrow-left" /> Projects</a>
-					<Hero title={entry.data.title} align="start">
+					<Hero title="" align="start">
+						<h1 style="font-size: 4rem; font-family: 'Mona Sans', sans-serif; min-height: max-content;">{entry.data.title}</h1>
 						<div class="details">
 							<div class="tags">
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
 							</div>
-							<p class="description">{entry.data.description}</p>
+							<p class="description" style="font-family: 'Fraunces', sans-serif;">{entry.data.description}</p>
 						</div>
 					</Hero>
 				</div>
@@ -99,6 +103,7 @@ const { Content } = await entry.render();
 		gap: 0.5rem;
 	}
 
+
 	.description {
 		font-size: var(--text-lg);
 		max-width: 54ch;
@@ -107,6 +112,18 @@ const { Content } = await entry.render();
 	.content {
 		max-width: 65ch;
 		margin-inline: auto;
+		font-family: 'Space Grotesk', sans-serif;
+		font-weight: 600;
+	}
+
+	a {
+		font-family: 'Fraunces', sans-serif;
+		font-weight: 600;
+	}
+
+	p {
+		font-family: 'Inter', sans-serif;
+		font-weight: 600;
 	}
 
 	.content > :global(* + *) {

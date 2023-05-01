@@ -238,6 +238,7 @@ h2 {
 
 h3 {
 	font-size: var(--text-3xl);
+	font-family: 'Mona Sans', sans-serif;
 }
 
 h4 {
@@ -326,6 +327,16 @@ h5 {
 	}
 }
 
+@font-face {
+	font-family: 'Mona Sans';
+	src:
+	  url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+	  url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+	font-weight: 950;
+	font-stretch: 800%;
+  }
+  
+
 .full-wh {
     position: absolute;
     top: 0px;
@@ -351,6 +362,7 @@ h5 {
     z-index: -1;
 
 }
+
 
 #stars {
     width: 1px;

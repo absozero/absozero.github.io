@@ -5,6 +5,10 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import {Content as Portfolio} from './post/portfolio.md';
 import Footer from '../components/Footer.astro';
+
+import "@fontsource/inter"
+import "@fontsource/space-grotesk"
+import "@fontsource/poppins"
 ---
 <script is:inline src="/vis-timeline-graph2d.min.js"></script>
 <script is:inline src="/pace.min.js"></script>
@@ -116,23 +120,24 @@ import Footer from '../components/Footer.astro';
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
+				title=""
 				tagline=""
 			>
-			<p id="element"></p>
+			<h1 style="font-size: 4rem; font-family: 'Mona Sans', sans-serif;">About Me</h1>
+			<p id="element" style="font-family: 'Poppins', sans-serif; font-weight: 600;"></p>
 				<img
 					src="/assets/dock.jpeg"
-					alt="Absozero at projects with a colleague"
+					alt="Matrix rain"
 				/>
 			</Hero>
 
 
 			<section>
 				
-				<h2 class="section-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Background</h2>
+				<h2 class="section-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Background &#10233;</h2>
 				<div class="content">
 					<p>
-						I am a computer scientist, devops engineer, sys atemdministrator, and web developer all rolled up into one.
+						I am a computer scientist, devops engineer, system administrator, and web developer all rolled up into one.
 					</p>
 					<p>
 						Here's my story, I came from learning to make videos on Imovie, then transferred to editing videos on my computer.
@@ -178,13 +183,65 @@ import Footer from '../components/Footer.astro';
 					<div style="display: inline-block;" id="progress5" class="fadein" data-scroll data-scroll-class="fadein--visible"></div>
 
 					<br>
-					<h2>This is me:</h2>
-					<Portfolio />
+					<h3>This is me:</h3>
 					<br>
+					
+					<p><a href="https://linktr.ee/absozero"><img src="https://img.shields.io/badge/-Links-green?style=flat&amp;link=https://linktr.ee/absozero" alt="Links"></a></p>
+					<p><br></p>
+					<p>I am <a href="https://linktr.ee/absozero">Absozero</a>. An open source enthusiast, indecisive developer, and a humorous person. I love to 👨‍💻 code and work with any type of software, regardless of the language. 🤖 Hardware is also a portion that I like, I work in robotics, in the VEX ecosystem. That is where two portions come together, both coding and controlling hardware on the robot. I also work in the web, desktop, and command line fields, with javascript and python mainly, and I also work with rust and go for low level/compiled software.</p>
+					<p><br></p>
+					<p><a href="https://github.com/absozero"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=absozero&amp;theme=radical" alt="Top Langs"></a></p>
+					<hr>
+					<p><br></p>
+					<h3 id="technologies-used-">Technologies used:</h3>
+					<p><br></p>
+					<ul>
+					<li>VSCode</li>
+					<li>Linux</li>
+					<li>Git</li>
+					<li>Go</li>
+					<li>Rust</li>
+					<li>Javascript<ul>
+					<li>Node</li>
+					</ul>
+					</li>
+					<li>Python</li>
+					</ul>
+					<hr>
+					<p><br></p>
+					<h3 id="my-stack-">My stack:</h3>
+					<p><br></p>
+					<p><a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-JavaScript-black?style=flat&amp;logo=javascript&amp;link=https://github.com/absozero" alt="JavaScript"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&amp;logo=html5&amp;logoColor=white&amp;link=https://github.com/absozero" alt="HTML5"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Python-darkblue?style=flat&amp;logo=python&amp;logoColor=yellow&amp;link=https://github.com/absozero" alt="Python"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Go-blue?style=flat&amp;logo=go&amp;logoColor=white&amp;link=https://github.com/absozero" alt="Go"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/Rust-D87600?style=flat&amp;logo=rust&amp;link=https://github.com/absozero" alt="Java"></a></p>
+					<p><a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Hugo-418958?style=flat&amp;logo=hugo&amp;logoColor=white&amp;link=https://github.com/absozero" alt="Hugo"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&amp;logo=css3&amp;link=https://github.com/absozero" alt="CSS3"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-json-02569B?style=flat&amp;logo=json&amp;link=https://github.com/absozero" alt="JSON"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Electron-dimgray?style=flat&amp;logo=electron&amp;logoColor=aliceblue&amp;link=https://github.com/absozero" alt="Electron"></a><a href="https://github.com/absozero">
+					<img src="https://img.shields.io/badge/-Svelte-orangered?style=flat&amp;logo=svelte&amp;logoColor=white&amp;link=https://github.com/absozero" alt="Svelte"></a>
+					<a href="https://github.com/absozero">
+					<img src="https://img.shields.io/badge/-Nodejs-darkgreen?style=flat&amp;logo=Node.js&amp;logoColor=yellow&amp;link=https://github.com/absozero" alt="Nodejs"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Docker-black?style=flat&amp;logo=docker&amp;link=https://github.com/absozero" alt="Docker"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-MySQL-black?style=flat&amp;logo=mysql&amp;link=https://github.com/absozero" alt="MySQL"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Git-black?style=flat&amp;logo=git&amp;link=https://github.com/absozero" alt="Git"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Github-black?style=flat&amp;logo=github&amp;logoColor=white&amp;link=https://github.com/absozero" alt="Git"></a></p>
+					<p><a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Vim-darkgreen?style=flat&amp;logo=vim&amp;link=https://github.com/absozero" alt="Vim"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Vscode-blue?style=flat&amp;logo=visual-studio-code&amp;link=https://github.com/absozero" alt="VSCode"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Windows-darkblue?style=flat&amp;logo=windows&amp;link=https://github.com/absozero" alt="Windows"></a>
+					<a href="https://github.com/absozero"><img src="https://img.shields.io/badge/-Linux-black?style=flat&amp;logo=linux&amp;logoColor=yellow&amp;link=https://github.com/absozero" alt="Linux"></a></p>
+					<p><br></p>
+					<h3 id="some-more-stats">Some more stats</h3>
+					<p><br></p>
+					<p><a href="https://github.com/absozero/absozero.github.io"><img src="https://github-readme-stats.vercel.app/api/pin/?username=absozero&amp;theme=react&amp;repo=absozero.github.io" alt="Readme Card"></a></p>
+					<p><a href="https://github.com/absozero/awesome-devtools"><img src="https://github-readme-stats.vercel.app/api/pin/?username=absozero&amp;theme=react&amp;repo=awesome-devtools" alt="Awesome Devtools"></a></p>
+					<p><a href="https://github.com/absozero/absozero"><img src="https://github-readme-stats.vercel.app/api?username=absozero&amp;theme=blueberry&amp;show_icons=true&amp;hide_border=true" alt="Abso&#39;s github stats"></a></p>					
+			<br>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Skills</h2>
+				<h2 class="section-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Skills &#10233;</h2>
 				<div class="content">
 					<p>Devops, Sysadmin, Software engineer, backend and Frontend developer, robotics experience</p>
 					<br>
@@ -195,7 +252,7 @@ import Footer from '../components/Footer.astro';
 
 			
 		</main>
-		<h1 class="section-title" style="align-items: center; text-align: center;" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Timeline of Interests</h1>
+		<h2 class="section-title" style="align-items: center; text-align: center;" data-scroll data-scroll-direction="horizontal" data-scroll-speed="0.3">Timeline of Interests</h2>
 		<div id="visualization"></div>
 
 		<ContactCTA />
@@ -220,6 +277,23 @@ import Footer from '../components/Footer.astro';
 	.fadein {
 		opacity: 0;
 		transition: opacity 2.5s;
+	}
+
+	h2 {
+		font-family: "Inter", sans-serif;
+		font-weight: 900;
+		font-style: italic;
+		font-stretch: 1200%;
+	}
+
+	p {
+		font-family: 'Space Grotesk', sans-serif;
+		font-weight: 500;
+	}
+
+	li {
+		font-family: 'Space Grotesk', sans-serif;
+		font-weight: 500;
 	}
 
 	.fadein--visible {
