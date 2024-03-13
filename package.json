@@ -10,15 +10,15 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^0.16.0",
+		"@astrojs/mdx": "^2.2.0",
 		"@fontsource/fraunces": "^4.5.11",
 		"@fontsource/inter": "^4.5.15",
 		"@fontsource/material-icons-rounded": "^4.5.4",
 		"@fontsource/poppins": "^4.5.10",
 		"@fontsource/space-grotesk": "^4.5.13",
-		"astro": "^2.0.10",
+		"astro": "^4.5.2",
 		"locomotive-scroll": "^4.1.4",
-		"progressbar.js": "^1.1.0",
-		"typed.js": "^2.0.15"
+		"progressbar.js": "^1.1.1",
+		"typed.js": "^2.1.0"
 	}
 }
